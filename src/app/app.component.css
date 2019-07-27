@@ -1,0 +1,25 @@
+:host {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../assets/bonitastu.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: blur(5px); */
+}
+
+.app__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 3rem;
+  font-family: fantasy;
+  text-align: center;
+}
