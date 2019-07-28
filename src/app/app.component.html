@@ -1,22 +1,48 @@
-<app-header></app-header>
 <div class="app__background"></div>
+<app-header></app-header>
 <div class="app__container">
-  <img src="../../assets/BonitasTuLogo.png" alt="bontitastu-logo" />
-  <h1>¡bienvenidos al festival del año!</h1>
-  <iframe
-    title="bonitas-tu-official-promo"
-    src="https://www.youtube.com/embed/O4zfnY1jp4w?autoplay=1&mute=1"
-  >
-  </iframe>
-  <agm-map [latitude]="lat" [longitude]="lng">
-    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-  </agm-map>
-  <a href="https://www.instagram.com/el_bekario/" target="_blank">
-    <img
-      src="../assets/instagram-icon.png"
-      alt="instagram-icon"
-      height="42"
-      width="42"
-    />
-  </a>
+  <section id="home">
+    <img src="../../assets/BonitasTuLogo.png" alt="bontitastu-logo" />
+    <h1>¡bienvenidos al festival del año!</h1>
+  </section>
+  <section id="promo">
+    <h3>Official Promo</h3>
+    <iframe
+      title="bonitas-tu-official-promo"
+      src="https://www.youtube.com/embed/O4zfnY1jp4w"
+    >
+    </iframe>
+  </section>
+  <section id="where">
+    <h3>¿Dónde será?</h3>
+    <div class="app__place">
+      <img
+        src="../assets/chozas-de-canales.jpg"
+        alt="chozas-de-canales"
+        sizes="700px"
+      />
+      <div class="app__place-content">
+        <div class="app__place-date">2 de ago - 4 de ago</div>
+        <div class="app__place-title">Chozas de Canales</div>
+        <div class="app__place-separator"></div>
+        <a
+          href="https://goo.gl/maps/LbSy1zV1sbrTBU1Z8"
+          class="app__place-link"
+          target="_blank"
+          >¿Cómo llegar?</a
+        >
+      </div>
+    </div>
+  </section>
+  <section id="social">
+    <h3>Nuestras redes</h3>
+    <a href="https://www.instagram.com/bonitastu/" target="_blank">
+      <img
+        src="../assets/instagram-icon.png"
+        alt="instagram-icon"
+        height="42"
+        width="42"
+      />
+    </a>
+  </section>
 </div>
