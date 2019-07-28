@@ -10,7 +10,7 @@
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  background-image: url("../assets/bonitastu.jpeg");
+  background-image: url("../assets/FondoBonitasTu.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,7 +38,8 @@ h1 {
 }
 
 img {
-  cursor: pointer;
+  width: 11rem;
+  height: auto;
 }
 
 iframe {

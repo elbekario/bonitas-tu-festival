@@ -1,3 +1,4 @@
+import { HeaderComponent } from './header/header.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -6,7 +7,7 @@ import { AppComponent } from './app.component';
 import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HeaderComponent],
   imports: [
     BrowserModule,
     AgmCoreModule.forRoot({
