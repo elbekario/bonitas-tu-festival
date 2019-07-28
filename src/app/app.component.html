@@ -1,5 +1,14 @@
+<div class="app__background"></div>
 <div class="app__container">
   <h1>¡bienvenidos al festival del año!</h1>
+  <iframe
+    title="bonitas-tu-official-promo"
+    src="https://www.youtube.com/embed/O4zfnY1jp4w?autoplay=1&mute=1"
+  >
+  </iframe>
+  <agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
   <a href="https://www.instagram.com/el_bekario/" target="_blank">
     <img
       src="../assets/instagram-icon.png"

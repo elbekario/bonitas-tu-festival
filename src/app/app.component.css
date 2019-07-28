@@ -2,14 +2,26 @@
   display: block;
   height: 100vh;
   width: 100vw;
+}
+
+.app__background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
   background-image: url("../assets/bonitastu.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* filter: blur(5px); */
 }
 
 .app__container {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -27,4 +39,16 @@ h1 {
 
 img {
   cursor: pointer;
+}
+
+iframe {
+  border: 2px solid #01113f;
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+}
+
+agm-map {
+  height: 300px;
+  width: 300px;
 }
