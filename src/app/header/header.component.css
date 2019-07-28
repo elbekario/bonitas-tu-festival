@@ -9,5 +9,9 @@
   left: 0;
   height: 2.5rem;
   width: 100%;
-  background-color: rgb(244, 33, 159)
+  background-color: rgb(244, 33, 159); 
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-family: fantasy;
+  font-weight: bold;
 }
