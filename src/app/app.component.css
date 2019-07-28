@@ -11,7 +11,8 @@
 
 .app__container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
 }
@@ -22,4 +23,8 @@ h1 {
   font-size: 3rem;
   font-family: fantasy;
   text-align: center;
+}
+
+img {
+  cursor: pointer;
 }
