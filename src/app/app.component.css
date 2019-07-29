@@ -148,6 +148,13 @@ iframe {
   width: auto;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  z-index: 999;
+}
+
 @media only screen and (max-width: 640px) {
   .app__contact-text {
     font-size: 3rem;
