@@ -156,13 +156,12 @@ a {
 
 #mailto {
   z-index: 999;
+
 }
 
 @media only screen and (max-width: 640px) {
   .app__contact-text {
     font-size: 3rem;
-    z-index: 999;
-    padding-top: 35rem;
   }
 
   .app__contact-image {
@@ -179,4 +178,9 @@ a {
   #timetable img {
     margin-top: -30px;
   }
+
+  #contact h3 {
+    margin-top: -95px;
+  }
+
 }

@@ -1,29 +1,57 @@
 :host {
-  display: block;
-  position: relative;
-}
-
-.header__links {
   position: fixed;
   top: 0;
   left: 0;
-  height: 2.5rem;
   width: 100%;
-  background-color: #e62d93;
   color: #ffffff;
-  font-size: 1rem;
-  /* font-family: fantasy; */
-  font-weight: bold;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  padding: 10px;
+  z-index: 9999;
 }
 
-a {
+.menu-wrapper {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  background-color: #e62d93;
+  height: 2.5rem;
+  padding: 0.5rem;
+}
+.menu-icon {
+  width: 1.5rem;
+  padding: 0.5rem;
+  height: auto;
+  cursor: pointer;
+}
+
+.menu-content {
+  position: absolute;
+  top: 3.5rem;
+  width: 100%;
+  left: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.open {
+  max-height: 100vh;
+}
+
+.menu-option {
+  display: block;
+  opacity: 0.8;
+  height:2.5rem;
+  background-color: #e62d93;
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.header-title {
+  font-size: 1.25rem;
+  padding-left: 1rem;
+  opacity: 0.9;
 }

@@ -6,4 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  open = false;
+  options = ['home', 'promo', 'where', 'social', 'timetable', 'contact'];
+
+  switchMenu() {
+    this.open = !this.open;
+  }
+
+  closeMenu() {
+    this.open = false;
+  }
 }
