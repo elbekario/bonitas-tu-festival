@@ -21,13 +21,12 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  overflow-y: scroll;
   padding: 48px;
   box-sizing: border-box;
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -52,30 +51,17 @@ h3 {
   text-align: center;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
-  
 }
 
 img {
   width: 11rem;
   height: auto;
-  filter: drop-shadow(3px 7px 21px rgba(255,255,255, 0.75));
+  filter: drop-shadow(3px 7px 21px rgba(255, 255, 255, 0.75));
 }
 
 .horario {
   width: 100%;
   height: auto;
-}
-
-.contacto-text {
-  font-size: 3rem;
-  z-index: 999;
-  padding-top: 35rem;
-}
-.contacto {
-  position: absolute;
-  bottom: 0;
-  height: auto;
-  width: 100%;
 }
 
 iframe {
@@ -140,4 +126,47 @@ iframe {
   line-height: 1.2857142857142858em;
   color: #008489;
   text-transform: uppercase;
+}
+
+#timetable h3,
+#contact h3 {
+  margin-top: 90px;
+}
+
+#timetable img {
+  margin-top: -90px;
+  width: 100%;
+}
+
+#contact img {
+  margin-top: -90px;
+}
+
+.app__contact-image {
+  height: auto;
+  max-width: 600px;
+  width: auto;
+}
+
+@media only screen and (max-width: 640px) {
+  .app__contact-text {
+    font-size: 3rem;
+    z-index: 999;
+    padding-top: 35rem;
+  }
+
+  .app__contact-image {
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+  }
+
+  #timetable h3 {
+    margin-top: 30px;
+  }
+
+  #timetable img {
+    margin-top: -30px;
+  }
 }
