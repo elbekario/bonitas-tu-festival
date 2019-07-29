@@ -40,23 +40,42 @@ section {
 h1 {
   color: white;
   text-shadow: 2px 2px 4px #000000;
-  font-family: fantasy;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
+  text-transform: uppercase;
 }
 
 h3 {
   color: white;
   text-shadow: 2px 2px 4px #000000;
-  font-family: fantasy;
-  font-size: 2rem;
+  font-size: 1.75rem;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  
 }
 
 img {
   width: 11rem;
   height: auto;
+  filter: drop-shadow(3px 7px 21px rgba(255,255,255, 0.75));
+}
+
+.horario {
+  width: 100%;
+  height: auto;
+}
+
+.contacto-text {
+  font-size: 3rem;
+  z-index: 999;
+  padding-top: 35rem;
+}
+.contacto {
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  width: 100%;
 }
 
 iframe {
@@ -78,8 +97,6 @@ iframe {
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
   overflow: hidden;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    Helvetica Neue, sans-serif;
 }
 
 .app__place img {

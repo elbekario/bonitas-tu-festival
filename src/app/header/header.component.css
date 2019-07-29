@@ -9,10 +9,10 @@
   left: 0;
   height: 2.5rem;
   width: 100%;
-  background-color: #eb3342;
+  background-color: #e62d93;
   color: #ffffff;
   font-size: 1rem;
-  font-family: fantasy;
+  /* font-family: fantasy; */
   font-weight: bold;
   z-index: 1;
   display: flex;
