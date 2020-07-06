@@ -4,17 +4,24 @@
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  background-image: url("../assets/FondoBonitasTu.png");
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(2px);
+  /* filter: blur(2px); */
+}
+
+.app__background__old {
+  background-image: url("../assets/FondoBonitasTu.png");
+}
+
+.app__background__new {
+  background-image: url("../assets/Fondo2020.png");
 }
 
 .app__container {
   position: absolute;
   top: 0;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   color: #f1f1f1;
   width: 100%;
   display: flex;
