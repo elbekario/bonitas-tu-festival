@@ -1,17 +1,16 @@
-<div class="app__background app__background__old"></div>
+<div
+  class="app__background"
+  [ngStyle]="{ 'background-image': 'url(' + background + ')' }"
+></div>
 <app-header></app-header>
 <div class="app__container">
   <section id="home">
-    <img src="../../assets/BonitasTuLogo2019.png" alt="bontitastu-logo" />
+    <img [src]="logo" alt="bontitastu-logo" />
     <h1>¡bienvenidos al festival del año!</h1>
   </section>
   <section id="promo">
     <h3>Official Promo</h3>
-    <iframe
-      title="bonitas-tu-official-promo"
-      src="https://www.youtube.com/embed/O4zfnY1jp4w"
-    >
-    </iframe>
+    <iframe title="bonitas-tu-official-promo" [src]="video"> </iframe>
   </section>
   <section id="where">
     <h3>¿Dónde será?</h3>
@@ -22,7 +21,7 @@
         sizes="700px"
       />
       <div class="app__place-content">
-        <div class="app__place-date">2 de ago - 4 de ago</div>
+        <div class="app__place-date">{{ date }}</div>
         <div class="app__place-title">Chozas de Canales</div>
         <div class="app__place-separator"></div>
         <a
@@ -52,12 +51,8 @@
   </section>
   <section id="timetable">
     <h3>Horario</h3>
-    <a href="../assets/BonitasTuHorario.png" download>
-      <img
-        src="../assets/BonitasTuHorario.png"
-        alt="horario"
-        class="app__timetable"
-      />
+    <a [href]="schedule" download>
+      <img [src]="schedule" alt="horario" class="app__timetable" />
     </a>
   </section>
   <section id="contact">

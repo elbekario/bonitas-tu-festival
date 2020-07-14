@@ -10,14 +10,6 @@
   /* filter: blur(2px); */
 }
 
-.app__background__old {
-  background-image: url("../assets/FondoBonitasTu.png");
-}
-
-.app__background__new {
-  background-image: url("../assets/Fondo2020.png");
-}
-
 .app__container {
   position: absolute;
   top: 0;
