@@ -18,7 +18,7 @@ export class App2020Component {
     );
   }
   date = '24 de julio - 26 de julio';
-  schedule = '../assets/comingsoon.png';
+  schedule = '../assets/BonitasTuHorario2020.png';
 
   constructor(private readonly sanitizer: DomSanitizer) {}
 }
