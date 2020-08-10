@@ -161,14 +161,18 @@ section:last-child {
   padding-bottom: 0;
 }
 
+#contact {
+  justify-content: flex-end;
+}
+
 @media only screen and (max-width: 640px) {
   .app__contact-text {
     font-size: 3rem;
   }
 
   .app__contact-image {
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
     height: auto;
     width: 100%;
   }
